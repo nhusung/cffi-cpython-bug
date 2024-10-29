@@ -1,0 +1,15 @@
+[project]
+name = "foo"
+version = "0.0.1"
+requires-python = ">=3.9"
+
+dependencies = ["cffi ~= 1.12"]
+
+[build-system]
+requires = ["setuptools >= 61.0, <= 73.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["foo"]
+package-dir = { "foo" = "bindings/python/foo" }
+include-package-data = false
